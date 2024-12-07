@@ -3,6 +3,11 @@ services:
   n8n:
     image: docker.n8n.io/n8nio/n8n
     environment:
+      - N8N_HOST=n8n.yafb.net
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=https
+      - NODE_ENV=production
+      - WEBHOOK_URL=https://n8n.yafb.net
       - GENERIC_TIMEZONE="Europe/Rome"
       - TZ="Europe/Rome"
     ports:
