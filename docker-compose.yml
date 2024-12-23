@@ -3,7 +3,7 @@ services:
   n8n:
     image: n8nio/n8n
     environment:
-      - N8N_HOST=n8n.yafb.net
+      - N8N_HOST=0.0.0.0
       - N8N_PORT=5678
       - N8N_PROTOCOL=https
       - NODE_ENV=production
